@@ -15,7 +15,9 @@ public class Show extends BaseModel {
     private Movie movie;
     private Date startTime;
     private Date endTime;
+    @OneToMany
     private List<ShowSeat> showSeats;
+    @ManyToOne
     private Screen screen;
     @Enumerated(EnumType.ORDINAL)
     @ElementCollection // mapping table for screen to features
