@@ -18,3 +18,20 @@ but if they also do something specific -> @Repository, @Service
 
 For controllers which support RestAPIs -> @RestController
 For simple controllers which does not support REST APIs -> @Controller
+
+DTOs are supposed to be used by Controller layer only, service and repository layer should not deal with
+DTOs, they should only deal with internal models.
+
+
+
+User 1:M -> ticket
+
+A user
+<1,2,3,4,5>
+
+B user
+5
+
+Ticket table
+ticketId, userId
+B           5
