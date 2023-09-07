@@ -16,12 +16,4 @@ public class User extends BaseModel{
     private String password;
     @OneToMany
     private List<Ticket> tickets;
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 }

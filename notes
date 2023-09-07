@@ -35,3 +35,19 @@ B user
 Ticket table
 ticketId, userId
 B           5
+
+
+
+Ideal ->
+Controller -> service -> repository
+                |
+              service
+
+
+TicketController -> TicketService -> TicketRepository
+                        |
+                ShowSeatService/UserService
+
+1. Have properly initialised data into DB for BookMyShow and Splitwise
+2. Demo for both BookMyShow and Splitwise
+3. Case study
